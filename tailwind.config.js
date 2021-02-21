@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        steel: {
+        coal: {
           '300': '#4C4C4C',
           '400': '#353537',
           '500': '#272727',

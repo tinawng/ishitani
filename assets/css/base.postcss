@@ -8,21 +8,25 @@ html {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 
-  font-family: "Raleway";
-  @apply uppercase;
+  font-family: "Open Sans";
+  @apply text-black uppercase tracking-tight;
 }
 
+h1 {
+  @apply text-3xl font-medium;
+}
 h2 {
-  @apply text-xl font-medium;
+  @apply text-xl font-semibold;
 }
 h3 {
-  @apply text-sm font-normal;
+  @apply text-xs font-semibold;
+  word-spacing: .25rem;
 }
 
 /* 💫 Animations */
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-  transition: all 0.4s;
+  transition: all 0.3s;
   transition-property: transform, opacity;
 }
 .slide-fade-enter,
