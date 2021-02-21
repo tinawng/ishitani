@@ -33,7 +33,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://github.com/juliomrqz/nuxt-optimized-images
+    // used packages: imagemin-mozjpeg imagemin-pngquant imagemin-svgo lqip-loader responsive-loader sharp
+    '@aceforth/nuxt-optimized-images',
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [],
