@@ -19,20 +19,20 @@
       :images="img_amiisu_chair2.images"
       alt="amiisu-chair2"
     />
-    <ResponsiveImage
+    <!-- <ResponsiveImage
       class="w-full col-span-full"
       :images="img_amiisu_chair3.images"
       alt="amiisu-chair3"
-    />
-    <Carousel :srcs="[img_amiisu_chair0, img_amiisu_chair2, img_amiisu_chair3]" />
+    /> -->
+    <Carousel class="w-full col-span-full" :srcs="[img_amiisu_chair0, img_amiisu_chair1, img_amiisu_chair3]" />
   </section>
 </template>
 
 <script>
 const img_amiisu_chair2 = require("~/assets/img/amiisu-chair2.jpg?resize&sizes[]=600&sizes[]=900&sizes[]=1200&format=webp");
-const img_amiisu_chair0 = require("~/assets/img/amiisu-chair1.jpg?resize&sizes[]=1000&sizes[]=1300&sizes[]=1600&format=webp");
+const img_amiisu_chair0 = require("~/assets/img/amiisu-chair0.jpg?resize&sizes[]=1000&sizes[]=1300&sizes[]=1600&format=webp");
 const img_amiisu_chair1 = require("~/assets/img/amiisu-chair1.jpg?resize&sizes[]=1000&sizes[]=1300&sizes[]=1600&format=webp");
-const img_amiisu_chair3 = require("~/assets/img/amiisu-chair1.jpg?resize&sizes[]=1000&sizes[]=1300&sizes[]=1600&format=webp");
+const img_amiisu_chair3 = require("~/assets/img/amiisu-chair3.jpg?resize&sizes[]=1000&sizes[]=1300&sizes[]=1600&format=webp");
 export default {
   data() {
     return {
@@ -49,7 +49,7 @@ export default {
 section {
   @apply mx-8;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 28rem auto auto auto;
+  grid-template-rows: 28rem auto auto;
 }
 
 .description {

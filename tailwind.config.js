@@ -12,7 +12,11 @@ module.exports = {
           '800': '#0D0D0D',
           '900': '#090909',
         }
-      }
+      },
+      fontSize: {
+        '2xs': '.7rem',
+        '3xs': '.6rem',
+      },
     }
   },
   variants: {
